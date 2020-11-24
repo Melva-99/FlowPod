@@ -9,4 +9,7 @@ npm-debug.*
 *.orig.*
 web-build/
 
+#variables de entorno
+enviorment.js
+
 
