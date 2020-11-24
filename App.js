@@ -10,6 +10,7 @@ import ResultHeader from './src/header/result_header';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import Results from './src/screens/search_results';
+import Random from './src/screens/random_podcast';
 
 const Stack = createStackNavigator();
 const Footer = createMaterialBottomTabNavigator();
@@ -36,10 +37,10 @@ class App extends Component {
         />
         <Footer.Screen 
           name='Random' 
-          component={Results} 
+          component={Random}
           options={{
             tabBarLabel: '',
-            tabBarColor:'#212226',
+            tabBarColor:'#2c2f33',
             tabBarIcon: ({}) => (
               <Image style={{width:35, height:35}}source={require('./assets/FlowPod.png')}/>
             ),
