@@ -10,8 +10,8 @@ class randomPodcast extends Component {
                 <ScrollView>
                     <H1>Prueba uno de nuestros podcast</H1>
                     <View>
-                        <Image source={require('../../assets/thumbnail.jpg')} />
-                        <Viwe>
+                        <Image styles= {styles.Thumbnail} source={require('../../assets/thumbnail.jpg')} />
+                        <Viwe style={styles.autor_nombre} >
                             <Text>The Daily Show With Trevor Noah: Ears Edition</Text>
                             <Text>By iHeartRadio & Comedy Central</Text>
                         </Viwe>
@@ -24,7 +24,14 @@ class randomPodcast extends Component {
 }
 
 const styles = StyleSheet.create({
-    
+    Thumbnail: {
+        width: 150,
+        height: 150,
+        borderRadius: 50,
+    },
+    autor_nombre:{
+        flexDirection: 'column',
+    },
     container: {
         flex: 1,
         backgroundColor: '#363940',
